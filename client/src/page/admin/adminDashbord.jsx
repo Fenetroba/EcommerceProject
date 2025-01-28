@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "../../component/product/Product";
 import Create_Product from "../../component/create product/Create_Product";
-import "./adminDashboard.css";
+import "./AdminDashboard.css";
 import { useProductStore } from "../../store/product_store";
 const tabs = [
   { id: "create", lable: "Creat Product" },
