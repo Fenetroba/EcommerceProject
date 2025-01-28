@@ -9,7 +9,7 @@ const Product = () => {
   console.log("products", products);
   return (
     <div className="top_contener">
-      <table class="table table-hover">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th>PRODUCT</th>
