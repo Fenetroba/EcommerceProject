@@ -1,0 +1,58 @@
+.payment_conteners{
+     border-radius: 10px;
+     background: #9ce0bea2;
+     width: 200px;
+     
+    
+}
+
+.payment_conteners a{
+     text-decoration: none;
+     font-size: 12px;
+     color: black;
+}
+.payment_contener a:hover{
+     color: rgb(214, 143, 12);
+}
+.payment_contener button{
+     background: white;
+     border: none;
+     width: 95%;
+     border-radius: 6px;
+}
+.payment_contener button:hover{
+     background-color: green;
+     cursor: pointer;
+}
+.payment-method {
+     width: 250px;
+     position: relative;
+     right: -300px; /* Start off-screen */
+     transition: right 0.5s ease;
+     background-color: #f0f0f0;
+     padding: 20px;
+     border: 1px solid #ccc;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+ }
+
+ .payment-method.visible {
+     right: 0; /* Slide in to the right */
+ }
+
+ .paybutton {
+     padding: 10px 15px;
+     background-color: #0cf7c4;
+     color: rgb(7, 7, 7);
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+    
+ }
+
+ .paybutton button:hover {
+     background-color: #0056b3;
+ }
+
+

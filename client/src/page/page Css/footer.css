@@ -1,0 +1,71 @@
+.topContener{
+     background-color: var(--undergray);
+     overflow: hidden;
+     /* height: 50vh; */
+     margin-top: 150px;
+     
+}
+.footerContener{
+     display: flex;
+justify-content: space-around;
+     align-items: center;
+   gap: 30px;
+   padding: 20px;
+}
+.socealmediaicons{
+     padding: 10px;
+     font-size: 30px;
+     cursor: pointer;
+     padding: 4px;
+     
+}
+.socealmediaicons:hover{
+     background-color: gold;
+     border-radius: 50%;
+     transition: 0.6s;
+     
+}
+.socialmedia{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+.contactUs{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     width: 200px;
+}
+.shaopingStor{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+
+.shaopingStor h1::after{
+     content: '';
+     height: 4px;
+     width: 0%;
+     background-color: gold;
+     display: block;
+     
+}
+.shaopingStor h1:hover::after{
+     width: 100%;
+     transition: 0.7s;
+     cursor:cell;
+}
+.contactBtton{
+     width: 100%;
+     margin: 0;
+     font-size: 17px;
+     font-weight: bold;
+     cursor: pointer;
+}
+@media screen and (max-width:736px) {
+     
+     .footerContener{
+          flex-direction: column;
+     }
+}

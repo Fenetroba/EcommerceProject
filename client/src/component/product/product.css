@@ -1,0 +1,26 @@
+.top_contener{
+    margin: 40px;
+}
+ .product-table button {
+
+     color: white; /* White text */
+     border: none; /* Remove border */
+     padding: 5px 10px; /* Button padding */
+     cursor: pointer; /* Pointer cursor on hover */
+ }
+ 
+ .product-table button:hover {
+     background-color: #45a049; /* Darker green on hover */
+ }
+ .product_image{
+     width: 30px;
+     height: 30px;
+ }
+
+.actives{
+    background-color: black;
+
+}.product_image img{
+    width: 50px;
+    height: 50px;
+}

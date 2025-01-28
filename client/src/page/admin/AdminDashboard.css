@@ -1,0 +1,25 @@
+.active {
+  background-color: #ffda07;
+  transition: 2s;
+  padding: 6px 20px;
+  margin: 10px;
+
+}
+
+.second_contener {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.second_contener button {
+  padding: 6px 20px;
+  margin: 20px;
+  border-radius: 6px;
+
+  box-shadow: inset 6px 6px 12px #e7e7e7,
+              inset -6px -6px 12px #b9b9b8;
+
+  border: none;
+}

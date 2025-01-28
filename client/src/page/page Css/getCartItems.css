@@ -1,0 +1,23 @@
+.cart_contener{
+     display: flex;
+     gap: 20px;
+     width: 100%;
+     height: auto;
+     flex-wrap: wrap;
+}
+.getcart_contener{
+     display: flex;
+     text-align: center;
+   align-items: flex-start;
+   gap: 30px;
+}
+.product_cart{
+     display: flex;
+     
+     
+     
+}
+.getCart{
+     margin: 30px;
+     overflow: hidden;
+}

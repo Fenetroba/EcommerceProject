@@ -1,0 +1,278 @@
+.allconten h2{
+     font-size: 30px;
+     border-bottom: solid gold 2px;
+     margin: 20px;
+
+}
+.allproduct_items{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.try{
+     display: flex;
+}
+.home_contener {
+     display: flex;
+     gap: 30px;
+     justify-content: center;
+     /* padding: 20px; */
+     margin:0 10px;
+     flex-wrap: wrap;
+
+}
+
+.magicpatternhome{
+     background-image: url("../../component//assets/Scrolled_Image/heros.jpg");
+   background-position: center;
+   background-size: cover;
+   
+
+}
+.category_contener {
+
+     overflow: hidden;
+     width: 240px;
+     
+}
+
+.category:hover img {
+     transform: scale(1.2);
+     transition: transform 1s;
+     border-radius: 10px;
+
+}
+
+.category img {
+     width: 100%;
+     margin-bottom: 40px;
+     border-radius: 10px;
+    
+
+}
+
+.text {
+     box-shadow: 0px 0px 7px #010c0c69;
+     padding: 5px;
+
+}
+
+.category_contener a {
+     color: var(--button);
+
+     text-decoration: none;
+     text-transform: capitalize;
+
+}
+
+.category_contener h3 {
+     font-size: 26px;
+}
+
+.ourProducts {
+     margin: 50px 0;
+     font-size: 50px;
+     color: var(--dark);
+   text-align: center;
+     margin-top: 30px;
+}
+
+.magicpatternhome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroInner{
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     gap: 20px;
+     height: 100%;
+     padding: 20px;
+     flex-wrap: wrap;
+     border-radius: 18px;
+
+
+}
+.heroInner p{
+    font-size: 45px;
+    
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+   background-color: var(--highGray);
+    width: 100%;
+    margin-top:24px ;
+}
+
+
+
+
+.gotoBtn{
+  
+     padding: 10px 100px;
+     background: var(--dark);
+     border: none;
+     cursor: pointer;
+     font-size: 20px;
+     font-weight: 900;
+     color: #fff;
+}
+
+   .top {
+     background-color: #fff;
+     transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+   }
+   .bottom {
+     background-color: #fdfbfb;
+     transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+   }
+   .left {
+     background-color: #fff7f7;
+     transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+   }
+   .right {
+     background-color: #ddd;
+     transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+   }
+   .front {
+     background-color: #aaa;
+     transform: translateZ(calc(var(--size) * .5));
+   }
+   .back {
+     background-color: #bbb;
+     transform: translateZ(calc(var(--size) * -.5));
+   }
+   
+   :root * {
+     /* Pause the animation */
+     animation-play-state: paused;
+     /* Bind the animation to scroll */
+     animation-delay: calc(var(--scroll) * -1s);
+     /* These last 2 properites clean up overshoot weirdness */
+     animation-iteration-count: 1;
+     animation-fill-mode: both;
+   }
+
+
+
+
+
+
+   
+.welcometext {
+     width: 90%;
+     height: 80vh;
+     border-radius: 40px;
+     background: transparent;
+     box-shadow: rgba(128, 224, 253, 0.788) 0px 30px 50px -2px inset, rgba(93, 162, 223, 0.13) 0px 18px 26px -18px inset;
+    border: solid 5px rgb(0, 0, 0);
+    margin-top: 90px;
+
+
+}
+
+
+
+.scrollContener {
+     display: flex;
+     /* flex-direction: column; */
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     height: 500px;
+     
+
+}
+
+.scroll-container {
+
+  
+     display: flex;
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--undergray);
+     padding: 30px;
+     
+
+}
+.top{
+     font-size: 40px;
+}
+.top span{
+     color: rgb(66, 57, 4);
+     font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+.category_page_contener {
+     background: linear-gradient(145deg, #e6e6e6, #ffffff);
+     box-shadow: 35px 35px 70px #ffffff,
+          -35px -35px 70px #ffffff;
+
+     padding: 30px;
+     font-size: 30px;
+}
+
+@media screen and (max-width:1250px) {
+     .welcometext {
+          flex-direction: column;
+     }
+
+}
+
+@media screen and (max-width:650px) {
+     .category_contener {
+
+          overflow: hidden;
+          width: 200px;
+
+
+     }
+     
+.gotoBtn{
+  
+     width: 100%;
+     font-size: 15px;
+     font-weight: 900;
+     color: #fff;
+}
+    
+     
+     
+}
+.top{
+     z-index: 222;
+}
+
+@media screen and (max-width:450px) {
+     .category_contener {
+
+          overflow: hidden;
+          width: 150px;
+
+
+     }
+
+     .welcometext {
+          position: absolute;
+          bottom: 0;
+     }
+
+     .welcomParagrap {
+          width: 300px;
+     }
+
+}

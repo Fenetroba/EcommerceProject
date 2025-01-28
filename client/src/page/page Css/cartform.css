@@ -1,0 +1,40 @@
+.cartform{
+     display: flex;
+     
+}
+.cartform_contener{
+    border-radius: 10px;
+    background: #ffffff4d;
+    box-shadow: rgba(212, 238, 248, 0.822) 0px 30px 50px -12px inset, rgba(4, 114, 216, 0.3) 0px 18px 26px -18px inset;
+ 
+}
+.card img{
+     width: 150px;
+     height: 150px;
+
+}
+.cartform_contener p{
+     font-size: 14px;
+
+}
+.cartform_contener button{
+     border: none;
+     font-weight: bolder;
+     background: #015964;
+     border-radius: 3px;
+     color: #fff;
+     margin: 5px;
+     cursor: pointer;
+     padding: 7px;
+
+}
+.cartform_contener button:last-child{
+     background-color: rgb(245, 117, 117);
+}
+.cartform_contener span{
+     padding: 7px;
+     background-color: gold;
+}
+.cartform_contener button:hover{
+     background-color: grey;
+}

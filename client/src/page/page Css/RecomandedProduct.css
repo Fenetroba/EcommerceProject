@@ -1,0 +1,14 @@
+.recomande_contener{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+.recomand{
+     margin: 40px;
+}
+.recomand .header_items{
+     font-size: 30px;
+     padding: 20px;
+     border-bottom: solid 3px gold;
+}
