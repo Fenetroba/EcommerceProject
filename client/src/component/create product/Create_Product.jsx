@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Create_Product.css";
+import "./Create_product.css";
 import { useProductStore } from "../../store/product_store";
 import Loding from "../../page/loding";
 const Create_Product = () => {
