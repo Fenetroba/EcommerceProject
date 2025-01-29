@@ -6,7 +6,7 @@
     border-radius: 10px;
     background: #ffffff4d;
     box-shadow: rgba(212, 238, 248, 0.822) 0px 30px 50px -12px inset, rgba(4, 114, 216, 0.3) 0px 18px 26px -18px inset;
-z-index: -10;
+/* z-index: -10; */
 }
 .card img{
      width: 150px;
@@ -26,6 +26,7 @@ z-index: -10;
      margin: 5px;
      cursor: pointer;
      padding: 7px;
+     
 
 }
 .cartform_contener button:last-child{

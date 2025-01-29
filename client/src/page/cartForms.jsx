@@ -13,7 +13,7 @@ const Cartforms = ({cart}) => {
   
      <div className="col">
     <div className="card h-100 cartform_contener">
-      <img src={cart.image}  alt="image" className=''/>
+      <img src={cart.image}  alt="image"/>
       <div className="card-body">
         <h5 className="card-title">Price: {cart.price * cart.quantity}</h5>
         <p className="card-text">Description :{cart.description}</p>
