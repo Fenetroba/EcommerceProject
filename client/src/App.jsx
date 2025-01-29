@@ -33,7 +33,7 @@ const App = () => {
     getCartItems();
   }, [getCartItems, user]);
   return (
-    <div className="app_Top App">
+    <div className="app_Top App contener-fluid">
 
 
       <div className="app_componet">
@@ -43,6 +43,7 @@ const App = () => {
         <Routes>
           {" "}
           {/* Define application routes */}
+          
           <Route path="/" element={<Home />} /> {/* Home route */}
           <Route
             path="/login"
@@ -62,16 +63,17 @@ const App = () => {
               )
             } // Admin Dashboard route; redirect if user is not an admin
           />
-          <Route path="/category/:Category" element={<CategoryPage />} />
+            <Route path="/category/:Category" element={<CategoryPage />} />
+        
           <Route
             path="/cart"
             element={user ? <GetcartItem /> : <Navigate to="/Login" />}
           />
         
         </Routes>
-        {location.pathname === "/Admin_dashbord" ? null : <Footer />}
+        {location.pathname === "/Admin_dashbord" ? null  : <Footer />}
       </div>
-      <Toaster /> {/* Render Toaster for notifications */}
+      <Toaster className="toaster"/> {/* Render Toaster for notifications */}
     </div>
   );
 };

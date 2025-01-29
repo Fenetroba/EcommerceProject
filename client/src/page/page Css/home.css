@@ -31,6 +31,10 @@ flex-wrap: wrap;
    
 
 }
+
+
+
+
 .category_contener {
 
      overflow: hidden;
@@ -163,14 +167,12 @@ flex-wrap: wrap;
 
 
    
-.welcometext {
-     width: 90%;
-     height: 80vh;
-     border-radius: 40px;
-     background: transparent;
-     box-shadow: rgba(128, 224, 253, 0.788) 0px 30px 50px -2px inset, rgba(93, 162, 223, 0.13) 0px 18px 26px -18px inset;
-    border: solid 5px rgb(0, 0, 0);
-    margin-top: 90px;
+.magicpatternhome h1 {
+    
+    border-radius: 33px;
+
+             
+
 
 
 }
@@ -252,9 +254,6 @@ flex-wrap: wrap;
     
      
      
-}
-.top{
-     z-index: 222;
 }
 
 @media screen and (max-width:450px) {

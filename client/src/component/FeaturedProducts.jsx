@@ -14,10 +14,10 @@ const FeaturedProducts = ({ FeaturedProducts }) => {
   return (
     <div className="row align-items-start"  >
       {FeaturedProducts.map((product) => (
-        <div key={product._id}  className="col-3 min-vh-50 border">
-          <div className="col-12">
+        <div key={product._id}  className="col-4">
+          <div className="">
             <img
-              className="img-fluid "
+              className="col-12"
               src={product.image}
               alt={product.name}
 		   

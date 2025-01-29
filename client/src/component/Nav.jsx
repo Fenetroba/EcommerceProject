@@ -44,12 +44,13 @@ const Nav = () => {
       <FaHamburger className="menuBar" onClick={menuhandler} />
       {/* style={diaplayMenu?{display:"none"}:{display:"block"}} */}
       <div className={diaplayMenu?'navigation_header block':'none'}>
-        <nav className="navigation_bar_contener">
+        <nav className="navigation_bar_contener topcontener">
  
           <Link to="/" className="header_logo">
             <img src={logo} alt="logo" />
           </Link>
- 
+  
+  <div className="navigation_bar_contener second_conteners">
           <Link to="/" className="navHome">Home <FaHome style={{color:"var(--therd_color)"}}/> </Link>
           {user && (
             <Link to="/cart">
@@ -84,7 +85,9 @@ const Nav = () => {
                 <FaUserFriends /> Sign Up
               </Link>
             </div>
+            
           )}
+          </div>
         </nav>
       </div>
     </div>

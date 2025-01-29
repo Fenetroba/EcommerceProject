@@ -16,7 +16,7 @@ const Login = () => {
     console.log(email,password)
   };
   return (
-    <div className="login_top">
+    <div className="login_top container-fluid">
       <div className="login_contener">
         <form onSubmit={submitHundler} className="login_form">
           <label>Email Address</label>

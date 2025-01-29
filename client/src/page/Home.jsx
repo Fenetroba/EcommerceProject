@@ -47,6 +47,7 @@ import React, { useEffect } from "react";
 import Category from "../component/Category";
 
 import heroIner from'../component/assets/hero1.png'
+import hero from'../component/assets/Scrolled_Image/heros.jpg'
 import { useProductStore } from "../store/product_store";
 import FeaturedProducts from "../component/FeaturedProducts";
 
@@ -64,17 +65,10 @@ useEffect(()=>{
   return (
     <div className="homePage_contener">
     
-      <div className="magicpatternhome">
-        <div className="welcometext">
-          <div className="heroInner">
-          <img src={heroIner} className="img-thumbnail bg-transparent" alt="..."/>
-           
-            <div>
-           <a href="#home_contener"><button className="gotoBtn">GO To Shope</button></a> 
-            <p>Welcome to  Owr Shop</p>
-            </div>
-          </div>
-        </div>
+      <div className="magicpatternhome table-hover trans">
+        
+      <h1 className= "w-90  bg-dark text-light p-5 shadow-lg text-center">Selame Tradational <span className="font-weight-900 ">Cloth Collection</span></h1>
+       
       </div>
 
       <h1 className="ourProducts">Shop by category</h1>
@@ -85,7 +79,7 @@ useEffect(()=>{
       </div>
 
       <h1 className='text-bg-danger mx-lg-2 col-12 text-center flex-fill align-content-center mt-4'>Featured Products </h1>
-      <div className='container-fluid text-center p-5 '>
+      <div className='container-fluid text-center md-720px '>
         {!loading && products.length >0 &&<FeaturedProducts FeaturedProducts={products}/>}
           
       </div>

@@ -11,8 +11,10 @@ import empty from '../component/assets/shopping.png'
 const CategoryPage = () => {
   const { Category } = useParams();
   const { fetchProductsByCategory, products } = useProductStore();
+    
   useEffect(() => {
     fetchProductsByCategory(Category);
+    
   }, [fetchProductsByCategory]);
 
   return (

@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 export const userUserStore = create((set) => ({
 	user: null,               // Initial state of the user is null (not logged in)
 	loading: false,           // Loading state to indicate ongoing requests
-	checkingAuth: true,          // Flag to check if authentication status is being verified
+	checkingAuth: false,          // Flag to check if authentication status is being verified
  
 	// Function for user sign-up
 	signUp: async ({ Username, email, password, ConfirmPassword }) => { 

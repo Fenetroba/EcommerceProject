@@ -1,6 +1,7 @@
 import React from "react";
 import { useProductStore } from "../../store/product_store";
 import "./product.css";
+import { AiFillDelete } from "react-icons/ai";
 
 const Product = () => {
   const { products, toggleFeaturedProduct, deleteProduct,createdAt } = useProductStore();
@@ -8,7 +9,7 @@ const Product = () => {
   
   console.log("products", products);
   return (
-    <div className="top_contener">
+    <div className="top_contener container">
       <table className="table table-hover">
         <thead>
           <tr>
@@ -39,10 +40,10 @@ const Product = () => {
 
               <td className="product_featur">
                 <button
-                  className="product_delete"
+                  className="product_delete border-0 p-2 text-dark  fs-4"
                   onClick={() => deleteProduct(product._id)}
                 >
-                  🧹
+                  <AiFillDelete/>
                 </button>
               </td>
               <td>{product.createdAt}</td>

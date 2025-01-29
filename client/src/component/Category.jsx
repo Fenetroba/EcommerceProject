@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../page/page Css/home.css";
 import { Link } from "react-router-dom";
 const Category = ({ CategoryEach }) => {
   return (
+
+
     <div className="category_contener">
       <Link to={"/category" + CategoryEach.href}>
         <div className="category">

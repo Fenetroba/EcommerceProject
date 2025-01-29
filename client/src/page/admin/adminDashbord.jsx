@@ -16,7 +16,7 @@ const AdminDashbord = () => {
   
   const [tabsActivity, setTabsActivit] = useState("create");
   return (
-    <div className="contener">
+    <div className="">
       <div className="second_contener">
         {tabs.map((each) => (
           <button

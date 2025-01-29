@@ -2,6 +2,7 @@
      border-radius: 10px;
      background: #9ce0bea2;
      width: 200px;
+     z-index: -10;
      
     
 }
