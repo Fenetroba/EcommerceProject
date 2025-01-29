@@ -1,3 +1,54 @@
+
+.gallery {
+  display: grid;
+  gap: 10px; 
+  grid-template-columns: auto 0 auto;
+  place-items: center;
+  background-color: var(--signForm);
+  border-radius: 20px;
+position: relative;
+
+}
+.gallery > img {
+  width: 300px; 
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: .35s;
+  filter: grayscale();
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.gallery > img:hover {
+     filter: grayscale(0%);
+   }
+.gallery > img:nth-child(1) {
+  clip-path: polygon(0 0,50% 0,100% 100%,0 100%);
+}
+.gallery > img:nth-child(2) {
+  clip-path: polygon(0 0,100% 0,50% 100%);
+}
+.gallery > img:nth-child(3) {
+  clip-path: polygon(50% 0,100% 0,100% 100%,0 100%);
+}
+.gallery > img:nth-child(4) {
+  clip-path: polygon(0 0,100% 0,50% 100%,0 100%);
+}
+.gallery > img:nth-child(5) {
+  clip-path: polygon(50% 0,100% 100%,0% 100%);
+  z-index: 444444;
+}
+.gallery > img:nth-child(6) {
+  clip-path: polygon(0 0,100% 0,100% 100%,50% 100%);
+}
+
+
+
+
+
+
+
+
 .allconten h2{
      font-size: 30px;
      border-bottom: solid gold 2px;
@@ -24,13 +75,6 @@ flex-wrap: wrap;
 
 }
 
-.magicpatternhome{
-     background-image: url("../../component//assets/Scrolled_Image/heros.jpg");
-   background-position: center;
-   background-size: cover;
-   
-
-}
 
 
 
@@ -83,12 +127,6 @@ flex-wrap: wrap;
      margin-top: 30px;
 }
 
-.magicpatternhome {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .heroInner{
      display: flex;
@@ -165,17 +203,6 @@ flex-wrap: wrap;
 
 
 
-
-   
-.magicpatternhome h1 {
-    
-    border-radius: 33px;
-
-             
-
-
-
-}
 
 
 
@@ -256,6 +283,7 @@ flex-wrap: wrap;
      
 }
 
+
 @media screen and (max-width:450px) {
      .category_contener {
 
@@ -272,6 +300,10 @@ flex-wrap: wrap;
 
      .welcomParagrap {
           width: 300px;
+     }
+     .gallery img{
+          width: 170px;
+          height: 320px;
      }
 
 }

@@ -5,7 +5,7 @@ import Home from "./page/Home"; // Import Home component
 import Login from "./page/Login"; // Import Login component
 import Signup from "./page/Signup"; // Import Signup component
 import Nav from "./component/Nav"; // Import Navigation component
-import { Toaster } from "react-hot-toast"; // Import Toaster for displaying notifications
+import toast, { Toaster } from "react-hot-toast"; // Import Toaster for displaying notifications
 import { userUserStore } from "./store/userUser_store"; // Import user store for authentication state management
 import AdminDashbord from "./page/admin/adminDashbord"; // Import Admin Dashboard component
 import UserCart from "./page/userCart/UserCart"; // Import User Cart component (not used in this code)
@@ -73,7 +73,9 @@ const App = () => {
         </Routes>
         {location.pathname === "/Admin_dashbord" ? null  : <Footer />}
       </div>
-      <Toaster className="toaster"/> {/* Render Toaster for notifications */}
+
+      <Toaster  zIndex={99999} toastOptions={{ duration: 3000 }}/> 
+
     </div>
   );
 };
