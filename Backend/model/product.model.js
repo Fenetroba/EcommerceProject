@@ -14,7 +14,7 @@ description:{
      type:String,
      required:true,
 },
-image:{
+image:{   
      type:String,
      required:[true,"the image is required"]
 },
